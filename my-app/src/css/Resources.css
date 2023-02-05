@@ -1,0 +1,30 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .resources--button{
+        @apply  px-4 py-2 rounded shadow-2xl text-white text-lg bg-sunset3;
+    }
+    .resources--container{
+        @apply grid bg-sunset1 flex-wrap gap-6 justify-center content-start grid-cols-newAuto md:w-4/5;
+    }
+    .resource--container{
+        @apply flex  gap-6 bg-sunset2 items-start justify-center px-8 py-6 rounded text-white h-resourceH;
+    }   
+    .resources--mainDiv{
+        @apply p-4 flex flex-col items-center justify-center mt-20 gap-4 bg-sunset1 ;
+    }
+    .resource--cost{
+        @apply text-black
+    }
+
+    .resource--name{
+        @apply text-black
+    }
+    .resource--form{
+        @apply flex flex-col  w-44 h-32
+    }
+}

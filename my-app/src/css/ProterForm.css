@@ -1,0 +1,14 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .app--title{
+        @apply flex justify-center items-center w-full h-full   text-5xl;
+    }
+     .app--container{
+        @apply bg-sunset1 h-full w-full ;
+    } 
+}

@@ -1,0 +1,57 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    
+    .MultiStep-indexedStep{
+        @apply rounded-full
+               
+             bg-white
+               w-20 
+               h-20 
+               text-base 
+               border-solid 
+               border 
+               border-gray-500 
+               flex 
+               justify-center 
+               items-center 
+               cursor-pointer 
+               text-black
+    }
+    .MultiStep-indexedStep.accomplished {
+        @apply bg-gradient-to-r from-sunset4 to-sunset5 text-white border-none
+    }
+    
+    .RSPBprogressBar{
+        @apply     bg-black flex flex-col h-1 w-3/10 leading-none rounded-xl items-center my-5 z-10 relative justify-between
+    }
+    /* aaaheight: 2px;a
+   aa width: 30%;
+   aaa line-height: 1;
+   aaa border-radius: 10px;
+   aaa position: relative;
+   aaa background-color: rgb(207, 207, 207);
+   aaa display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+    margin: 20px auto; */
+    
+    .RSPBprogressBar.RSPBstep
+    {
+        @apply justify-center items-center absolute inline-flex translate-x-1/2 transition-all z-10
+    }
+    .RSPBprogressBar.RSPBprogressBarText 
+    {
+        @apply text-white text-sm absolute top-1/2 left-1/2 translate-x-1/2 translate-y-1/2
+    }
+    .RSPBprogressBar.RSPBprogression
+    {
+        @apply absolute top-0 left-0 bottom-0 rounded-xl bg-sunset2  duration-300 ease-linear transition-all z-0
+    }
+   
+}

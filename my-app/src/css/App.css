@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input,
+select {
+    @apply placeholder-gray-400 !p-2 rounded;
+}
+
+button:hover {
+    @apply !bg-gradient-to-r from-sunset4 to-sunset5  !transition  !duration-100;
+}
+
+button:active {
+    @apply shadow-md translate-y-1
+}
+
+@layer components {
+
+    /* .app--title{
+        @apply flex justify-center items-center w-screen h-screen m-0  text-5xl;
+    } */
+    .app--container {
+        @apply bg-sunset1 h-screen w-screen;
+    }
+}

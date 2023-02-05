@@ -1,0 +1,39 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  
+   
+    .tasks--button{
+        @apply  px-6 py-2 rounded shadow-2xl text-white text-lg bg-sunset3 m-auto ;
+    }
+    .tasks--container{
+        @apply grid bg-sunset1 flex-wrap gap-6 justify-center content-start grid-cols-newAuto2 md:w-4/5;
+    }
+    .task--container{
+        @apply flex  gap-8 bg-sunset2 items-start justify-center px-8 py-6 rounded text-white md:max-w-md ;
+    }
+    .tasks--mainDiv{
+        @apply p-4 flex flex-col items-center justify-center mt-20 gap-4 bg-sunset1 pb-80 ;
+    }
+    .task--cost{
+        @apply text-black
+    }
+
+    .task--name{
+        @apply text-black
+    }
+    .task--form{
+        @apply flex flex-col gap-3
+    }
+    .task--dropdown{
+        @apply text-black
+    }
+    .task--multiSelect{
+        @apply text-gray-900 w-60
+    }
+
+}

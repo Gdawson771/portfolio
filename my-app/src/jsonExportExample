@@ -1,0 +1,62 @@
+{
+    "arrivals": [
+        {
+            "simulation": {
+                "name": "Example Name",
+                "flow": {
+                    "tasks": [
+                        {
+                            "name": "TaskA",
+                            "duration": {
+                                "distType": "C",
+                                "value1": 33,
+                                "value2": null
+                            },
+                            "cost": {
+                                "distType": "C",
+                                "value1": 44,
+                                "value2": null
+                            },
+                            "resources": "ResourceA, ResourceB",
+                            "priority": 0
+                        },
+                        {
+                            "name": "TaskB",
+                            "duration": {
+                                "distType": "C",
+                                "value1": 55,
+                                "value2": null
+                            },
+                            "cost": {
+                                "distType": "C",
+                                "value1": 66,
+                                "value2": null
+                            },
+                            "resources": "ResourceB",
+                            "priority": 0
+                        }
+                    ],
+                    "ordering": "TaskA->TaskB"
+                }
+            },
+            "infinite": true,
+            "rate": {
+                "distType": "C",
+                "value1": 77,
+                "value2": null
+            },
+            "simulationLimit": null,
+            "timeLimit": 88
+        }
+    ],
+    "resources": [
+        {
+            "name": "ResourceA",
+            "costPerTick": 11
+        },
+        {
+            "name": "ResourceB",
+            "costPerTick": 22
+        }
+    ]
+}
