@@ -69,7 +69,8 @@ export default function Submission() {
     }
     const [open, setOpen] = React.useState(false);
     return (<div className="tasks--mainDiv">
-        <div class="bg-darkSlateBlue p-6 rounded-lg mb-6 lg:w-2/3 text-white">
+         <div className="flex flex-col gap-8 bg-darkSlateBlue text-2xl text-slate-200 rounded p-4 sm:p-8 md:p-16 w-11/12 sm:w-11/12 md:w-4/5 lg:w-9/10" >
+
             <div class="bg-sunset1 md:p-5 p-2 mb-5 rounded-lg">
                 <h2 class="text-sunset5 text-lg mb-4">Error 404</h2>
                 <p class="mb-4">
