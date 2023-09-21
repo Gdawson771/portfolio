@@ -1,10 +1,8 @@
 import Home from "./Proter/Home"
-import Tasks from "./Proter/Tasks"
-import Orders from "./Proter/Orders"
-import Arrival from "./Proter/Arrival"
+import Projects from "./Proter/Projects"
+import Orders from "./Proter/About"
 import Submission from "./Proter/Submission"
-import Results from "./Proter/Results"
-import React, { useContext, useState } from "react"
+import React, { useContext } from "react"
 import { Context } from "../Context"
 import "../css/ProterForm.css"
 import MultiStepProgressBar from "./MultiStepProgressBar/MultiStepProgressBar";
@@ -44,7 +42,7 @@ export default function ProterForm() {
             {
             {
                 Home: <Home setPage={setPage}/>,
-                Projects: <Tasks setPage={setPage}    />,
+                Projects: <Projects setPage={setPage}    />,
                 About: <Orders setPage={setPage}  />,
                 Contact: <Submission setPage={setPage}  />,
                 

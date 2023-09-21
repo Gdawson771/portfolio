@@ -11,7 +11,6 @@ module.exports = {
       colors: {
         slateBlue: '#8896AB',
         darkSlateBlue: '#0E1C36',
-        myMint: '#00E676',
         sunset1: '#2b3951',
         sunset2: '#345d7d',
         sunset3: '#735a7b',

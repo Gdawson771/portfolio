@@ -1,11 +1,7 @@
-import logo from './logo.svg';
 import './css/App.css'
-import {Context} from "./Context"
-import React, { useContext }from "react"
-import { Routes, Route, Link } from "react-router-dom"
-import Nav from "./Components/Nav"
+import React from "react"
+import { Routes, Route } from "react-router-dom"
 import ProterForm from './Components/ProterForm';
-import Flow from "./Components/flow/reactFlowTest"
 function App() {
 
   return (

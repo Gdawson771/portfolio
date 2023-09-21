@@ -1,19 +1,9 @@
 
-import React, { useContext } from "react"
-import timeline2 from "../vis/timeline"
+import React from "react"
 import "../../css/Tasks.css"
-import vis from "vis-data";
-import Timeline from 'react-visjs-timeline'
-//import Timeline from 'react-visjs-timeline'
-import { Context } from "../../Context"
-import { elementAcceptingRef } from "@mui/utils"
-import Modal from '@mui/material/Modal';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
 
-import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css'; // optional for styling
+
 export default function Submission() {
 
     const [emailSent, setEmailSent] = React.useState(false)
@@ -56,7 +46,6 @@ export default function Submission() {
             date: new Date(),
             fileName: "Test_File_Name"
         })
-       // event.preventDefault();
         console.log(emailSent)
 
         fetch("https://w5jn79ev5c.execute-api.eu-west-2.amazonaws.com/sendEmail",
@@ -69,22 +58,41 @@ export default function Submission() {
                 },
                 body: body
             }).then(data => {
-                console.log("DONE")// Do some stuff here
+                console.log("DONE")
                 console.log(data)
             })
             .catch(err => {
                 console.log("error on fetch")
-                // Catch and display errors
             })
 
 
     }
     const [open, setOpen] = React.useState(false);
     return (<div className="tasks--mainDiv">
-       {!emailSent && <div>
+        <div class="bg-gray-800 p-6 rounded-lg mb-6 lg:w-2/3 text-white">
+            <div class="bg-sunset1 p-5 mb-5 rounded-lg">
+                <h2 class="text-sunset5 text-lg mb-4">Error 404</h2>
+                <p class="mb-4">
+                    I implemented AWS Lambda functions, utilizing AWS's mail service, to enable users of my portfolio site to email me directly. It functioned as expected, and I was quite pleased with it. However, after some time and after working on various other projects, I recognized potential flaws in my approach. The button, which you'll find below (now disabled), facilitated sending emails via AWS to my personal email. Unfortunately, there was no rate limiter in place, and the absence of a backend made it merely a fetch request to an AWS Lambda function. This oversight created a risk of incurring substantial costs from AWS, especially if someone maliciously spammed the service.
+                </p>
 
-            <button className="tasks--button !m-0 mr-10 " onClick={() => handleOpen()}>Send me an email</button>
+                <p class="mb-4">
+                    Ideally, I should implement a rate-limited TRPC-based API similar to what I've done for Plutocrater. However, guided by the philosophy of the "cult of done" and keen to finalize my portfolio website swiftly, I've opted to disable the email button for now, prioritizing security and cost control.
+                </p>
 
+                <p class="mb-4">
+                    For inquiries or to reach out, please email me at <a href="mailto:gdawson771@gmail.com" class="text-pink-500 hover:underline">gdawson771@gmail.com</a>. Alternatively, drop me a tweet on <a href="https://plutocrater.garethdawson.dev" class="text-pink-500 hover:underline">Plutocrater</a> (sign-in via GitHub required).
+                </p>
+            </div>
+        </div>
+
+
+        {!emailSent && <div>
+
+            <button disabled className="tasks--button !m-0 mr-10 !bg-gray-400 !cursor-not-allowed hover:!bg-gray-400 focus:!bg-gray-400" onClick={() => handleOpen()}>Send me an email</button>
+
+
+            {/* 
             {<Modal
 
                 open={open}
@@ -131,9 +139,9 @@ export default function Submission() {
                     <Button onClick={() => handleSubmit()}>Send email</Button>
                     <Button onClick={() => setOpen(false)}>Cancel</Button>
                 </Box>
-            </Modal>}
+            </Modal>} */}
         </div>}
-        {emailSent &&    <h1 className='app--title text-white md:text-6xl text-4xl'>Thanks for the email!</h1>}
+
     </div>
     )
 }
