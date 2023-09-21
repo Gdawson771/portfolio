@@ -7,9 +7,10 @@ export default function Orders() {
     return (
         <div className="tasks--mainDiv">
            
-                <div className="flex flex-col bg-darkSlateBlue rounded md:p-16 text-2xl text-slate-200  lg:w-9/10 gap-8 w-4/5 p-8">
+                <div className="flex flex-col gap-8 bg-darkSlateBlue text-2xl text-slate-200 rounded p-4 sm:p-8 md:p-16 w-11/12 sm:w-11/12 md:w-4/5 lg:w-9/10" >
 
-                    <div class="bg-sunset1 p-5 mb-5 rounded-lg">
+
+                    <div class="bg-sunset1 p-5 mb-5 rounded-lg text-sm">
                         <h2 class="text-sunset5 text-xl mb-4">Hello, I'm Gareth Dawson.</h2>
                         <p>I was fortunate enough to complete my studies with First Class Honours from the University of Edinburgh in Artificial Intelligence and Computer Science. Throughout my academic journey and through some hands-on experiences, I've grown fond of front-end engineering and have had the opportunity to familiarize myself with tools like React.js and Vue.js. I've also delved into blockchain technologies, gaining understanding of Solidity and Ethereum.</p>
 
