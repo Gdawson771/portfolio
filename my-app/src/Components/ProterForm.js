@@ -37,7 +37,7 @@ export default function ProterForm() {
     // const [displayFlow, setDisplayFlow] = React.useState(false)
 
     return (
-        <div className="flex flex-col pt-10 h-screen">
+        <div className="flex flex-col pt-10 h-screen w-screen">
             <MultiStepProgressBar page={page} onPageNumberClick={nextPageNumber} />
             {
             {

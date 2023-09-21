@@ -4,9 +4,9 @@ import "../../css/Tasks.css"
 export default function Projects() {
 
     return (<div className="tasks--mainDiv mt-16">
-        <body class="bg-darkSlateBlue p-10">
+        <body class="bg-darkSlateBlue md:p-10 p-4   ">
 
-            <div class="bg-sunset1 p-5 mb-5 rounded-lg">
+            <div class="bg-sunset1 md:p-5 mb-5 p-2 rounded-lg">
                 <h2 class="text-sunset5 text-lg mb-4">Full-stack, Typesafe, Next.js Twitter Clone - Sep 2023</h2>
                 <p class="text-slate-200">This project encompassed the development of a sophisticated Twitter clone where users' tweets are satirically ranked based on the amount of Ethereum they have in their wallets. The platform, built to support over 50k users, is entirely serverless and leverages a relational database. To interact with the platform, users require a Metamask account. The entire platform is hosted on Vercel. This project enhanced my technical skills in full-stack development, especially with Next.js, and serverless architectures. Simultaneously, I developed a robust ability for independent problem-solving, navigating challenges autonomously.</p>
                 <a href="https://plutocrater.garethdawson.dev">

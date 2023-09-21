@@ -10,9 +10,12 @@
         @apply rounded-full
                
              bg-white
-               w-20 
-               h-20 
-               text-base 
+               md:w-20 
+               md:h-20 
+               w-10
+               h-10 
+               md:text-base
+               text-xs
                border-solid 
                border 
                border-gray-500 
@@ -27,7 +30,7 @@
     }
     
     .RSPBprogressBar{
-        @apply     bg-black flex flex-col h-1 w-3/10 leading-none rounded-xl items-center my-5 z-10 relative justify-between
+        @apply     bg-black flex flex-col h-1 md:w-3/10 leading-none rounded-xl items-center my-5 z-10 relative justify-between
     }
     /* aaaheight: 2px;a
    aa width: 30%;

@@ -69,8 +69,8 @@ export default function Submission() {
     }
     const [open, setOpen] = React.useState(false);
     return (<div className="tasks--mainDiv">
-        <div class="bg-gray-800 p-6 rounded-lg mb-6 lg:w-2/3 text-white">
-            <div class="bg-sunset1 p-5 mb-5 rounded-lg">
+        <div class="bg-darkSlateBlue p-6 rounded-lg mb-6 lg:w-2/3 text-white">
+            <div class="bg-sunset1 md:p-5 p-2 mb-5 rounded-lg">
                 <h2 class="text-sunset5 text-lg mb-4">Error 404</h2>
                 <p class="mb-4">
                     I implemented AWS Lambda functions, utilizing AWS's mail service, to enable users of my portfolio site to email me directly. It functioned as expected, and I was quite pleased with it. However, after some time and after working on various other projects, I recognized potential flaws in my approach. The button, which you'll find below (now disabled), facilitated sending emails via AWS to my personal email. Unfortunately, there was no rate limiter in place, and the absence of a backend made it merely a fetch request to an AWS Lambda function. This oversight created a risk of incurring substantial costs from AWS, especially if someone maliciously spammed the service.
@@ -92,54 +92,7 @@ export default function Submission() {
             <button disabled className="tasks--button !m-0 mr-10 !bg-gray-400 !cursor-not-allowed hover:!bg-gray-400 focus:!bg-gray-400" onClick={() => handleOpen()}>Send me an email</button>
 
 
-            {/* 
-            {<Modal
-
-                open={open}
-                onClose={handleClose}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description"
-            >
-                <Box sx={style} className="w-full h-4/6 flex flex-col gap-4">
-                    <div className="w-full flex flex-col gap-8">
-                        <Tippy content={<span>Your email address</span>}>
-                            <label className="text-3xl text-center " for="name">Email address</label>
-                        </Tippy>
-                        <Tippy content={<span>Your email address</span>}>
-                            <input
-
-                                className="task--dropdown w-full border-gray-900 border"
-                                type="text"
-                                id="email"
-                                placeholder="foobar@do.do..."
-                                onChange={(event) => handleChange(event)}
-                                name="email"
-                                value={formData.email}
-                            />
-                        </Tippy>
-                    </div>
-                    <div className="w-full flex flex-col gap-8 h-3/5">
-                        <Tippy content={<span>Your message</span>}>
-                            <label className="text-xl text-center " for="text">Message</label>
-                        </Tippy>
-                        <Tippy content={<span>Your message</span>}>
-                            <textarea style={{ resize: "none" }} rows="20" cols="50" className="task--dropdown w-full border-gray-900 border"
-
-                                id="text"
-                                placeholder="Hello Gareth..."
-                                onChange={(event) => handleChange(event)}
-                                name="text"
-                                value={formData.text}>
-
-                            </textarea>
-
-                        </Tippy>
-                    </div>
-
-                    <Button onClick={() => handleSubmit()}>Send email</Button>
-                    <Button onClick={() => setOpen(false)}>Cancel</Button>
-                </Box>
-            </Modal>} */}
+        
         </div>}
 
     </div>
