@@ -35,7 +35,7 @@ export default function Projects() {
             <div class="bg-sunset1 p-5 mb-5 rounded-lg">
                 <h2 class="text-sunset5 text-lg mb-4">Voice-activated spice dispenser using AWS Lex and Flask - Jan 2022 – Apr 2022</h2>
                 <p  class="text-slate-200">In a team project comprising eight other developers, we crafted a voice-activated spice dispenser. My role centered around developing a Flask server that operated on a Raspberry Pi, coordinating the spice dispensation. Additionally, an AWS Lex chatbot was integrated to facilitate user communication with the Flask server. This project was a testament to my skills in IoT integration, Flask, and chatbot development. Furthermore, working in a team emphasized the significance of regular meetings and seamless communication, ensuring the project's successful execution.</p>
-                <img src={spiceDispenser} alt="Spice dispenser" className="w-1/3 rounded " />;
+                <img src={spiceDispenser} alt="Spice dispenser" className="md:w-1/3 rounded w-2/3 " />
            
             </div>
 
@@ -47,7 +47,7 @@ export default function Projects() {
             <div class="bg-sunset1 p-5 mb-5 rounded-lg">
                 <h2 class="text-sunset5 text-lg mb-4">Drone driver</h2>
                 <p  class="text-slate-200">The Drone driver project was a deep dive into optimization algorithms. Designed for a model similar to UberEats, the objective was to determine the most profitable route between a many of customers and many restaurants, integrating the A* algorithm. A significant challenge was the integration of no-fly zones. This project bolstered my understanding of optimization algorithms, particularly the A* algorithm, and applying them to real-world logistical challenges. The project was a large scale object oriented project written entirely in Java.</p>
-                <img src={flightPath} alt="Drone Flight Path" className="w-1/3 rounded " />;
+                <img src={flightPath} alt="Drone Flight Path" className="md:w-1/3 rounded w-2/3" />
             </div>
 
         </body>
